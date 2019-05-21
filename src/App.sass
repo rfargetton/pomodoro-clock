@@ -1,0 +1,111 @@
+// Dracula Theme Color Scheme --> https://github.com/dracula/dracula-theme/
+
+$background-color : #282a36
+$current-line: 	#44475a
+$foreground: #f8f8f2
+$comment: #6272a4
+$purple: #bd93f9
+$cyan: #8be9fd
+$yellow: #f1fa8c
+$red: #ff5555
+
+body
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif
+  font-weight: 300
+  letter-spacing: 0.03em
+  background-color: lightgray
+  
+#root
+  height: 100vh
+  display: grid
+  place-items: center
+
+#app 
+  background-color: $background-color
+  color: $purple	
+  display: grid
+  grid-template-rows: 1fr 1fr 5fr 1fr
+  width: 380px
+  height: 600px
+  border-radius: 20px
+  box-shadow: 5px 15px 40px rgba(0,0,0,0.5)
+  overflow: hidden
+
+button 
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+  background: transparent
+  color: $foreground
+  font-size: 24px
+
+button:focus 
+  border: none
+  outline: none
+
+.setup
+  background-color: $current-line
+  display: grid
+  padding: 20px
+  grid-template-columns: 1fr 20px 40px 20px
+  border-bottom: 1px solid $background-color
+  align-items: end
+
+.length
+  text-align: center
+
+#timer
+  border-bottom: 1px solid $current-line
+
+.svg-timer 
+  width: 380px
+  height: 380px
+  transform: rotateZ(-90deg)
+
+#timer-circle 
+  fill: $background-color
+  stroke-width: 10
+  stroke-linecap: round
+  transition: stroke-dashoffset 1s linear
+
+#grad-circle 
+  fill: none
+  stroke: $current-line
+  stroke-width: 2
+
+#timer-text
+  z-index: 1000
+  position: relative
+  height: 0px
+  top: 140px
+  left: 0px
+  text-align: center
+  border-radius: 50%
+  #time-left 
+    margin-top: 8px
+    font-size: 48px
+    color: $yellow
+  #timer-label
+    color: $comment
+    font-size: 18px
+    font-weight: 400
+
+#controls
+  background-color: $current-line
+  padding: 20px
+  display: grid
+  grid-template-columns: 1fr 5fr 1fr
+
+footer
+  font-size: 14px
+  width: 380px
+  box-sizing: border-box
+  padding: 40px  
+  text-align: center
+  color: $background-color
+  a 
+    color: $purple
+    text-decoration: none
