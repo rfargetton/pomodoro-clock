@@ -1,6 +1,11 @@
 # Pomodoro Clock
 
-A pomodoro timer built with React, featuring the [Dracula color Scheme](https://github.com/dracula/dracula-theme) and bootstraped with [Create React App](https://github.com/facebook/create-react-app)
+A pomodoro timer built with React, featuring the [Dracula color Scheme](https://github.com/dracula/dracula-theme) and bootstraped with [Create React App](https://github.com/facebook/create-react-app). 
+See a live demo [here](pomodoro.romaricfargetton.com).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/460aa8d4-cdd6-4b4c-8e08-f9e60affcbca/deploy-status)](https://app.netlify.com/sites/affectionate-volhard-57014b/deploys)
+
+![Pomodoro Clok Screenshot](assets/img/pomodoro-clock-screenshot.png)
 
 ## Features
 
@@ -26,4 +31,3 @@ A pomodoro timer built with React, featuring the [Dracula color Scheme](https://
     ```
     npm run build
     ```
-
